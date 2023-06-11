@@ -14,7 +14,7 @@ class InfoBox extends Component {
     }
 
     fetchDescription = () => {
-        fetch(`http://localhost:3000/markers/${this.props.markerId}`)
+        fetch(`https://animaps-server-production.up.railway.app/markers/${this.props.markerId}`)
             .then((response) => response.json())
             .then((data) => {
                 this.setState({ description: data[0].description });

@@ -1,0 +1,18 @@
+.leaflet-container {
+    width: 900px;
+    height: 500px;
+    margin: auto;
+  }
+  
+  .locations:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .markero {
+    filter: hue-rotate(120deg);
+  }
+  
+  .link:hover {
+    cursor: pointer;
+  }

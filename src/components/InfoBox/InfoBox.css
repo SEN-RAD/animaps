@@ -1,0 +1,50 @@
+.info {
+    display: flex;
+    flex: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.paragraph {
+
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    border: solid black 0.5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.image {
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid black 0.5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.info {
+    animation: 0.5s anim-lineUp;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

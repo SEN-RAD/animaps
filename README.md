@@ -4,7 +4,7 @@ This project was created using React, Node, Express, Tachyons, and PostgreSQL.
 
 ## Idea
 
-My girlfriend loves animals and asked me if I could build an app to record all the places where we've seen them, which could then be shared with others. I said: 'I sure can try!'. This is the result.
+My girlfriend loves animals and asked me if I could build an app to record all the places where we've seen them, which could then be shared with others. I said: 'I sure can try!'. This is the result :D
 
 ### Functionality
 

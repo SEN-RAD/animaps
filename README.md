@@ -12,10 +12,10 @@ The user can use the map or search bar to find spots, or use the Add spot sectio
 
 ### Lessons Learned
 
-How to build a full-stack app from scratch.
-How to integrate OpenStreetMaps using ReactLeaflet. 
-How to use GET and POST HTTP methods in conjunction. 
-How to use chatGPT to assist me in my coding.
+* How to build a full-stack app from scratch.
+* How to integrate OpenStreetMaps using ReactLeaflet. 
+* How to use GET and POST HTTP methods in conjunction. 
+* How to use chatGPT to assist me in my coding.
 
 ### Room for Improvement
 

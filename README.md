@@ -8,7 +8,7 @@ My girlfriend loves animals and asked me if I could build an app to record all t
 
 ### Functionality
 
-The user can use the map or search bar to find spots, or use the Add spot section to add his own spots. 
+The user can use the map or search bar to find spots for animal/wildlife watching, or use the Add spot section to add his own spots. 
 
 ### Lessons Learned
 

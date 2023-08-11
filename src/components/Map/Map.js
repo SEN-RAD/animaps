@@ -17,7 +17,7 @@ class Map extends Component {
     }
 
     componentDidMount() {
-        fetch('https://animaps-server-production.up.railway.app')
+        fetch('https://animaps-server.onrender.com')
             .then(response => response.json())
             .then(data => {
                 const markers = data.map(item => {

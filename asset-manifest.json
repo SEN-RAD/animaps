@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/animaps/static/css/main.076d91e6.css",
-    "main.js": "/animaps/static/js/main.26d05fd0.js",
+    "main.js": "/animaps/static/js/main.9be9372c.js",
     "static/media/squirrel.jpg": "/animaps/static/media/squirrel.27d5b2df2baa20992c63.jpg",
     "static/media/PermanentMarker-Regular.ttf": "/animaps/static/media/PermanentMarker-Regular.73b4d2d7c9141a94b91c.ttf",
     "static/media/logo.png": "/animaps/static/media/logo.1f4148e4627e5725a3b4.png",
     "index.html": "/animaps/index.html",
     "main.076d91e6.css.map": "/animaps/static/css/main.076d91e6.css.map",
-    "main.26d05fd0.js.map": "/animaps/static/js/main.26d05fd0.js.map"
+    "main.9be9372c.js.map": "/animaps/static/js/main.9be9372c.js.map"
   },
   "entrypoints": [
     "static/css/main.076d91e6.css",
-    "static/js/main.26d05fd0.js"
+    "static/js/main.9be9372c.js"
   ]
 }

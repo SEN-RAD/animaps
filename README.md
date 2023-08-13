@@ -1,21 +1,17 @@
 # Animaps
 
-This project was created using React, Node, Express, Tachyons, and PostgreSQL. 
+This project was created using React, Node, Express, Knex, ReactLeaflet, Tachyons, and PostgreSQL. 
 
-## Idea
+### Idea and Functionality
 
-My girlfriend loves animals and asked me if I could build an app to record all the places where we've seen them, which could then be shared with others. I said: 'I sure can try!'. This is the result :D I was largely influenced by this website: https://calisthenics-parks.com/. The idea is to make it like that, but with animals, instead of calisthenics parks. 
-
-### Functionality
-
-The user can use the map or search bar to find spots for animal/wildlife watching, or use the Add spot section to add his own spots. 
+It's a community-oriented application on which users can find spots for animal watching by exploring the map or using the search bar, and add their own locations to the database.
 
 ### Lessons Learned
 
-* How to build a full-stack app from scratch.
+* How to build and deploy a full-stack application from scratch.
 * How to integrate OpenStreetMaps using ReactLeaflet. 
-* How to use GET and POST HTTP methods in conjunction. 
-* How to use chatGPT to assist me in my coding.
+* How to use GET and POST HTTP requests in conjunction to insert and retrieve data from a database.
+* How to work with ChatGPT.
 
 ### Room for Improvement
 

@@ -32,8 +32,7 @@ class NewMarker extends Component {
 
   handleSubmit = () => {
     const { coordinates, animal, name, description, uploadedImage } = this.state;
-
-    fetch('https://animaps-server.onrender.com/contribute', {
+    fetch('https://animaps-server.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -44,7 +44,12 @@ class NewMarker extends Component {
       })
     })
       .then(response => response.json())
-      .then((data) => { this.setState({ responsePost: data }) })
+      .then((data) => {
+        this.setState({ responsePost: data });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
 
   }
 

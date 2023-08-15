@@ -1,6 +1,6 @@
 # Animaps
 
-This project was created using React, Node, Express, Knex, ReactLeaflet, Tachyons, and PostgreSQL. 
+This project was created using React, Node, Express, Knex, ReactLeaflet, Tachyons, and PostgreSQL. Deployed on gh Pages and Render. 
 
 ### Idea and Functionality
 

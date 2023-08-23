@@ -15,10 +15,10 @@ Users can explore the Map or use the search input to search for cities (change t
 
 ### Room for Improvement
 
-- When dealing with a keyword that is obviously an animal name (e.g. dogs) but that is not in the database, the app should respond with a message saying that the animal is not in the database, instead of responding with a location on the map by that name.
-- Users should and will be able to upload images, which will be displayed in the infoBox.
-- Only registered users should be able to add spots, so register and sign-in functionality is needed. 
-- User should be able to edit their spots and comment on others', so PUT endpoints are needed.
-- The app could automatically identify a new user's location and set updatedStartLocation accordingly. 
+* When dealing with a keyword that is obviously an animal name (e.g. dogs) but that is not in the database, the app should respond with a message saying that the animal is not in the database, instead of responding with a location on the map by that name.
+* Users should and will be able to upload images, which will be displayed in the infoBox.
+* Only registered users should be able to add spots, so register and sign-in functionality is needed. 
+* User should be able to edit their spots and comment on others', so PUT endpoints are needed.
+* The app could automatically identify a new user's location and set updatedStartLocation accordingly. 
 
 

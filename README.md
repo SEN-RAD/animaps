@@ -1,7 +1,5 @@
 # Animaps
 
-This project was created using React, Node, Express, Knex, ReactLeaflet, Tachyons, and PostgreSQL. Deployed on gh Pages and Render. 
-
 ### Idea and Functionality
 
 * Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).

@@ -8,14 +8,16 @@ Users can explore the Map or use the search input to search for cities (change t
 
 ### Lessons Learned
 
-* How to build and deploy a full-stack application using React, Node and PSQL. 
-* How to use ReactLeaflet to integrate OpenStreetMaps. 
-* How to use GET and POST HTTP requests in conjunction to insert and retrieve data from a database.
-* How to work with ChatGPT.
+* How to build and deploy a full-stack application using React, Node and PSQL (PgAdmin4) + Git, Railway, and Render.
+* How to integrate maps using ReactLeaflet and OpenStreetMaps. 
+* How to use GET and POST HTTP requests to insert and retrieve data from a database.
+* How to use event handlers (e.g. onClick, onKeyPress ) to improve the users'experience.
+* How to be self-reliant when facing challenges and in the debugging process.
+* How to research solutions and work with ChatGPT.
 
 ### Room for Improvement
 
-* When dealing with a keyword that is obviously an animal name (e.g. dogs) but that is not in the database, the app should respond with a message saying that the animal is not in the database, instead of responding with a location on the map by that name.
+* When searching a keyword that is obviously an animal name (e.g. dogs) but that is not in the database, the app should respond with a message saying that it is not in the database, instead of responding with a location on the map with that name (yes, there are locations called "dogs").
 * Users should and will be able to upload images, which will be displayed in the infoBox.
 * Only registered users should be able to add spots, so register and sign-in functionality is needed. 
 * User should be able to edit their spots and comment on others', so PUT endpoints are needed.

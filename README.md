@@ -1,5 +1,7 @@
 # Animaps
 
+This is a personal project and a work in progress.
+
 ### Idea and Functionality
 
 * Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).

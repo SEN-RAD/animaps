@@ -3,11 +3,11 @@
 This is a personal project and a work in progress.
 
 ### Idea and Functionality
-It's an app for animal lovers to find and add spots for animal watching. 
+It's an app for animal lovers to find and add spots for animal watching. It has three main functions:
 
-* Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).
-* Clicking on a marker opens a pop-up with the name of the spot and the option to see more information about it.
-* Users can also contribute to the database and add their own markers to the map by filling out the form in the section Add Spot. 
+1. Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).
+2. Clicking on a marker opens a pop-up with the name of the spot and the option to see more information about it.
+3. Users can also contribute to the database and add their own markers to the map by filling out the form in the section Add Spot. 
 
 ### Lessons Learned
 

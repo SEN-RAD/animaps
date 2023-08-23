@@ -4,7 +4,7 @@ This project was created using React, Node, Express, Knex, ReactLeaflet, Tachyon
 
 ### Idea and Functionality
 
-Users can explore the map or use the search bar to find spots for animal watching, click on the map markers to find more information about the location, and contribute to the database by adding their own spots.
+In addition to exploring the Map, users can use the searchBox to search for cities (change the map's position) or animals (filter the markers shown on the map). Clicking on a marker opens a pop-up with the name of the spot and the option to see more information about it. If a user wants to contribute to the database and add a marker to the map, they can do so by filling out the form in the section Add Spot. 
 
 Want to test it?
 

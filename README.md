@@ -21,9 +21,9 @@ It's an app for animal lovers to find and add spots for animal watching. It has 
 ### Room for Improvement
 
 * When searching a keyword that is obviously an animal name (e.g. dogs) but that is not in the database, the app should respond with a message saying that it is not in the database, instead of responding with a location on the map with that name (yes, there are locations called "dogs").
-* Users should and will be able to upload images, which will be displayed in the infoBox.
-* Only registered users should be able to add spots, so register and sign-in functionality is needed. 
-* User should be able to edit their spots and comment on others', so PUT endpoints are needed.
-* The app could automatically identify a new user's location and set updatedStartLocation accordingly. 
+* Image upload function in the Add Spot (not working at the moment).
+* Register and sign-in functions, so only registered users are able to add contribute.
+* PUT and POST endpoints to edit spots and add comments.
+* Automatic identification of a new user's location and setting of updatedStartLocation accordingly. 
 
 

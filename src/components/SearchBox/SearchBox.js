@@ -8,7 +8,7 @@ class SearchBox extends Component {
                 <input
                     className='pa3 ba b--brown w-25 br2'
                     type='search'
-                    placeholder='search for cities'
+                    placeholder='search for cities or animals'
                     onChange={onSearchChange}
                     onKeyDown={handleKeyPress}
                 />

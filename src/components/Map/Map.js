@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Map.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import InfoBox from '../InfoBox/InfoBox';
+import CircularProgress from '@mui/material/CircularProgress';
 
 class Map extends Component {
 
@@ -9,14 +10,15 @@ class Map extends Component {
         super(props);
         this.state = {
             startPosition: props.updatedStartPosition || [50.0755, 14.4378],
-            items: [],
             markers: [],
             visible: false,
-            positionId: ''
+            positionId: '',
+            isLoading: false
         };
     }
 
     componentDidMount() {
+        this.setState({ isLoading: true });
         fetch('https://animaps-server.onrender.com')
             .then(response => response.json())
             .then(data => {
@@ -25,17 +27,17 @@ class Map extends Component {
                     const positionLatLng = position.split(',');
                     return {
                         position: positionLatLng,
-                        name: item.animal,
+                        name: item.name,
                         id: item.id
                     };
                 });
-                this.setState({
-                    items: data,
-                    markers: markers,
-                });
+                this.setState({ markers: markers });
             })
             .catch(error => {
                 console.log(error);
+            })
+            .finally(() => {
+                this.setState({ isLoading: false });
             });
     }
 
@@ -44,46 +46,64 @@ class Map extends Component {
             visible: true,
             positionId: marker.id
         });
-        console.log("here", this.state.positionId);
     }
 
     componentDidUpdate(prevProps) {
-        if (prevProps.updatedStartPosition !== this.props.updatedStartPosition) {
-            this.setState({ startPosition: this.props.updatedStartPosition });
+        if (prevProps.filteredMarkers !== this.props.filteredMarkers) {
+            this.setState({ markers: this.props.filteredMarkers }, () => {
+                console.log('position got updated, first case', this.state.markers);
+            });
         }
     }
 
+
+
     render() {
-        const { markers, startPosition } = this.state;
+        const { markers, startPosition, isLoading } = this.state;
+
         return (
-            <div className='container'>
-                <div className='leaflet-container'>
-                    <MapContainer center={startPosition} zoom={13}>
-                        <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />
-                        {markers.map(marker => (
-                            <Marker key={marker.id} position={marker.position}>
-                                <Popup>
-                                    Here you can see: <br />
-                                    <span
-                                        className='locations'
-                                        onClick={() => { this.handlePopupClick(marker); }}>
-                                        {marker.name}
-                                    </span>
-                                </Popup>
-                            </Marker>
-                        ))}
-                    </MapContainer>
-                </div>
-                <div className='info'>
-                    {this.state.visible && (
-                        <div>
-                            {this.state.positionId && <InfoBox key={this.state.positionId} markerId={this.state.positionId} />}
+            <div>
+                {isLoading ? (
+                    <div>
+                        <CircularProgress />
+                        <p className='black'>Loading the map...</p>
+                    </div>
+                ) : (
+                    <div className='container'>
+                        <div className='leaflet-container'>
+                            <MapContainer center={startPosition} zoom={11}>
+                                <TileLayer
+                                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                                />
+                                {markers.map(marker => (
+                                    <Marker key={marker.id} position={marker.position}>
+                                        <Popup>
+                                            <div className='flex flex-column items-center'>
+                                                <span className='b f6'>
+                                                    {marker.name}
+                                                </span>
+                                                <span
+                                                    className='locations blue link'
+                                                    onClick={() => { this.handlePopupClick(marker); }}
+                                                >
+                                                    see more
+                                                </span>
+                                            </div>
+                                        </Popup>
+                                    </Marker>
+                                ))}
+                            </MapContainer>
                         </div>
-                    )}
-                </div>
+                        <div className='info'>
+                            {this.state.visible && (
+                                <div>
+                                    {this.state.positionId && <InfoBox key={this.state.positionId} markerId={this.state.positionId} />}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                )}
             </div>
         );
     }

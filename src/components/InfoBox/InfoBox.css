@@ -7,12 +7,14 @@
 
 .paragraph {
 
-    width: 500px;
+    width: 600px;
     height: 200px;
     margin: auto;
     border: solid black 0.5px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    text-align: left;
+    padding: 10px;
 }
 
 .image {

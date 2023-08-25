@@ -3,10 +3,19 @@
 }
 
 .description {
-	
-	height:200px;
+	height: 200px;
+	vertical-align: top;
+	text-align: left;
 }
 
 .form {
 	width: 1200px;
+	background-color: #e1d4a8
+}
+
+.infoBox {
+	width: 520px;
+	height: 60px;
+	background-color: white;
+	font-size: smaller;
 }

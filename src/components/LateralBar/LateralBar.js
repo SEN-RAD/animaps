@@ -11,14 +11,13 @@ function LateralBar({ onAddSpotClick }) {
           Our map lets you easily find spots where you can watch or interact with animals in the wild or enclosures.<br /><br />
           Wanna help others find the best locations?
         </p>
-        <h2
-          className='link dim'
+        <h2 className='link dim' onClick={onAddSpotClick}> Add a spot!</h2>
+        <img
+          className='logo-lateral grow-large pointer'
+          src={require("./logo.png")}
+          alt="Menu Logo"
           onClick={onAddSpotClick}
-        >
-          Add a spot!</h2>
-          <img
-                    className='logo-lateral'
-                    src={require("./logo.png")} alt="Menu Logo" />
+        />
         <div className='social-icons flex mr5'>
           <a className="link dim gray dib h2 w2 br-100 mr3 " href="#" title="">
             <svg data-icon="facebook" viewBox="0 0 32 32" >

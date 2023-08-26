@@ -15,8 +15,8 @@ It's an app for animal lovers to find and add spots for animal watching. It has 
 ---
 ## Lessons Learned 📋
 
-* How to build and deploy a full-stack application using React, Node and PSQL (PgAdmin4) + Git, Railway, and Render.
-* How to integrate maps using ReactLeaflet and OpenStreetMaps. 
+* How to build and deploy a full-stack application.
+* How to integrate OpenStreetMaps. 
 * How to use GET and POST HTTP requests to insert and retrieve data from a database.
 * How to use event handlers (e.g. onClick, onKeyPress ) to improve the users'experience.
 * How to be self-reliant when facing challenges and in the debugging process.
@@ -34,6 +34,11 @@ It's an app for animal lovers to find and add spots for animal watching. It has 
 ---
  ## Technologies used 🛠️
 
+-  React, Node and PSQL (PgAdmin4) + Git, Railway, and Render.
+-  Tachyons.
+-  Mui Core.
+-  React Leaflet.
+-  ChatGPT.
 
 
 

@@ -1,9 +1,10 @@
-# Animaps
+# Animaps 
 
 This is a personal project and a work in progress.
 
 ---
 ## Idea and Functionality 🚀
+
 It's an app for animal lovers to find and add spots for animal watching. It has three main functions:
 
 ⚡️ Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).
@@ -35,9 +36,10 @@ It's an app for animal lovers to find and add spots for animal watching. It has 
  ## Technologies used 🛠️
 
 -  React, Node and PSQL (PgAdmin4) + Git, Railway, and Render.
+-  Express.
 -  Tachyons.
 -  Mui Core.
--  React Leaflet.
+-  React Leaflet and OpenStreetMaps.
 -  ChatGPT.
 
 

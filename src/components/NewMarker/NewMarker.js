@@ -11,7 +11,8 @@ class NewMarker extends Component {
     uploadedImage: null,
     emptyFields: false,
     responsePost: '',
-    visible: false
+    visible: false,
+    invalidCoordinates: false
   };
 
   handleMouseToggle = () => {
@@ -38,9 +39,12 @@ class NewMarker extends Component {
 
   handleSubmit = () => {
     const { coordinates, animal, name, description, uploadedImage } = this.state;
+    const coordinatesPattern = /^\s*-?\d+\.\d+\s*,\s*-?\d+\.\d+\s*$/;
 
     if (coordinates === '' || animal === '' || name === '' || description === '') {
       this.setState({ emptyFields: true });
+    } else if (!coordinatesPattern.test(coordinates)) {
+      this.setState({ invalidCoordinates: true });
     } else {
       fetch('https://animaps-server.onrender.com/contribute', {
         method: 'POST',
@@ -60,7 +64,16 @@ class NewMarker extends Component {
   }
 
   render() {
-    const { coordinates, animal, name, description, responsePost, visible, emptyFields } = this.state;
+    const {
+      coordinates,
+      animal,
+      name,
+      description,
+      responsePost,
+      visible,
+      emptyFields,
+      invalidCoordinates
+    } = this.state;
     const { onBackToMapClick } = this.props;
     return (
       <>
@@ -101,7 +114,7 @@ class NewMarker extends Component {
                 type="text"
                 name="coordinates"
                 value={coordinates}
-                placeholder='Type in coordinates. E.g.: 50.0755, 14.4378'
+                placeholder='Coordinates in decimal format. E.g.: 50.0755, 14.4378'
                 onChange={this.handleChange}
               />
             </div>
@@ -149,6 +162,9 @@ class NewMarker extends Component {
             </div>
             {emptyFields && (
               <p className="error-message red">Please fill in all required fields.</p>
+            )}
+            {invalidCoordinates && (
+              <p className="error-message red">Please fill in coordinates in the correct format.</p>
             )}
             <button
               className='par1 pal1 mb3 mt4 f4 b'

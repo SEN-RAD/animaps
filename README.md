@@ -18,6 +18,7 @@ It's an app for animal lovers to find and add spots for animal watching. It has 
 ## Lessons Learned 📋
 
 * How to build and deploy a full-stack application.
+* How to work with Class components and Lifecycle Methods in React. 
 * How to integrate OpenStreetMaps. 
 * How to use GET and POST HTTP requests to insert and retrieve data from a database.
 * How to use event handlers (e.g. onClick, onKeyPress ) to improve the users'experience.

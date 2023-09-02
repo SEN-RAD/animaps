@@ -1,27 +1,25 @@
 # Animaps 
 
-This is a personal project and a work in progress.
+This is a personal project and a work in progress. It's an app for animal lovers to find and add spots for animal watching.
 Backend here https://github.com/SEN-RAD/animaps-server
 
 ---
-## Idea and Functionality 🚀
+## Functionality 🚀
 
-It's an app for animal lovers to find and add spots for animal watching. It has three main functions:
+⚡️ Map with interactive location markers.
 
-⚡️ Users can explore the Map or use the search input to search for cities (change the map's position) or animals (filter the markers shown on the map).
+⚡️ Search bar.
 
-⚡️ Clicking on a marker opens a pop-up with the name of the spot and the option to see more information about it.
-
-⚡️ Users can also contribute to the database and add their own markers to the map by filling out the form in the section Add Spot. 
+⚡️ Possibility to add new markers to the map. 
 
 ---
 ## Lessons Learned 📋
 
 * How to build and deploy a full-stack application using React, Node, and PSQL.
-* How to work with Class components and Lifecycle Methods in React. 
+* How to work with Class components and Lifecycle Methods in React.
+* * How to use event handlers (e.g. onClick, onKeyPress ) to improve the UI.
 * How to integrate maps from OpenStreetMaps using React leaflet. 
 * How to use GET and POST HTTP requests to insert and retrieve data from a database.
-* How to use event handlers (e.g. onClick, onKeyPress ) to improve the UI.
 * How to be self-reliant when facing challenges and in the debugging process.
 * How to research solutions and work with ChatGPT.
 

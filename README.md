@@ -16,10 +16,10 @@ Backend here https://github.com/SEN-RAD/animaps-server
 ## Lessons Learned 📋
 
 * How to build and deploy a full-stack application using React, Node, and PSQL.
-* How to work with Class components and Lifecycle Methods in React.
-* * How to use event handlers (e.g. onClick, onKeyPress ) to improve the UI.
+* How to use Class components and Lifecycle Methods in React.
+* How to use event handlers (e.g. onClick, onKeyPress ) to improve the UI.
 * How to integrate maps from OpenStreetMaps using React leaflet. 
-* How to use GET and POST HTTP requests to insert and retrieve data from a database.
+* How to use GET, POST, and .then to insert and retrieve data from a database.
 * How to be self-reliant when facing challenges and in the debugging process.
 * How to research solutions and work with ChatGPT.
 

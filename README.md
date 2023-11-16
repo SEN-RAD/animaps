@@ -1,5 +1,5 @@
 # Animaps 
-
+* THE LIVE VERSION IS TEMPORARILY INACTIVE *
 This is a personal project and a work in progress. It's an app for animal lovers to find and add spots for animal watching.
 Backend here https://github.com/SEN-RAD/animaps-server
 
